@@ -1,21 +1,11 @@
 /*
-
-flex defaults
-
 	display:flex;
 	flex-direction:column;
 	flex-wrap:nowrap;
 	justify-content:center;
 	align-items:flex-start;
 	align-content:flex-start;
-	
  */
-
-.button {
-
-}
-
-.button{}
 
 body {
 	font-size:10px;
@@ -38,11 +28,6 @@ body {
 }
 
 b {font-family:'PP Object Sans Heavy'}
-
-
-* {
-
-}
 
 
 /* variables */
@@ -184,7 +169,7 @@ b {font-family:'PP Object Sans Heavy'}
 @media screen and (width < 1440px) {
 
 	.navContainer {
-		margin:6px 24px;
+		margin:6px 12px;
 	}
 	
 	.navLink {
@@ -245,163 +230,6 @@ b {font-family:'PP Object Sans Heavy'}
 	z-index:1;
 }
 
-.header.container {
-	display:flex;
-	flex-direction:row;
-	flex-wrap:nowrap;
-	justify-content:flex-start;
-	align-items:center;
-	align-content:center;
-	width:calc(100% - 40px);
-	background:;
-}
 
-
-
-.header.container:before {
-	content:'';
-	background:#fff;
-	width:120px;
-	height:12px;
-	top:0;
-	left:0;
-	margin:20px 24px 0 0;
-}
-
-
-
-.header.container > .textContainer {
-	z-index:2;
-	display:flex;
-	flex-direction:column;
-	flex-wrap:nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content:flex-start;
-	background:;
-	color:#272B40;
-	margin:0 24px 0 0;
-}
-
-.header.container > .textContainer > .textSuper {
-	font-size:14px;
-	line-height:16px;
-	letter-spacing:-0.5px;
-	margin:0 0 6px 0;
-}
-
-.header.container > .textContainer > .textTitle {
-	font-size:72px;
-	line-height:84px;
-	letter-spacing:-3px;
-	margin:0 0 24px 0;
-}
-
-.header.container > .textContainer > .textDescription {
-	font-size:24px;
-	line-height:36px;
-	margin:0 0 24px 0;
-}
-
-.header.container > .textContainer div:last-of-type {
-	margin:0;
-}
-
-.header.container > .textContainer > .textDescription {
-	max-width:552px;
-}
-
-.header.container > .downloadPDF {
-	margin:20px 0 0 0;
-display:flex;
-justify-content: center;
-	align-content:center;
-	position:relative;
-	font-size:14px;
-	line-height:16px;
-	border-radius:48px;
-	border:1px solid #fff;
-	padding:12px 12px 12px 56px;
-		background-image:url("/res/i/icon_pdf.png");
-	background-repeat:no-repeat;
-	background-size:36px;
-	background-position: 12px center;
-	z-index:2;
-		transition:all 0.25s ease;
-		cursor:pointer;
-}
-.header.container > .downloadPDF:hover {
-border:1px solid lime;
-}
-
-.section.introduction > .infographicContainer {
-	width:calc(100% - (136px * 2));
-	background:;
-	display:flex;
-	flex-direction:row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items:center;
-	color:#fff;
-	padding:0px 136px;
-	margin-top:auto;
-	margin-bottom:72px;
-	z-index:2;
-}
-
-.section.introduction > .infographicContainer > .infographicItem {
-	display:flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items:center;
-	align-content:center;
-	flex-grow:1;
-	position:relative;
-	padding:0;
-	margin:6px 12px;
-	background:;
-	gap:12px;
-}
-
-.section.introduction > .infographicContainer > div:last-of-type {
-margin:0;
-}
-
-.infographicItem > .figure {
-	font-size:48px;
-	line-height:62px;
-	margin-bottom:-4px;
-}
-
-.figure img {
-max-height:48px;
-	margin-bottom:-8px;
-user-select: none;
-}
-
-.infographicItem > .text {
-	font-size:18px;
-	line-height:24px;
-}
-
-.section.footer {
-	height:2500px;
-}
-
-.section.seriesInfo {
-	position: relative;
-	height: 840px;
-background: linear-gradient(180deg, #79D5E9 0%, #7CA4BB 100%);
-
-	
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-	
-	padding: 0px 0 0 0;
-}
-
+/* ********************************* */
 
