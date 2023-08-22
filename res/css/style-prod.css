@@ -1,0 +1,221 @@
+/* Globals */
+
+.hide {display:none !important;}
+
+#main-Container {
+position:relative;
+max-width:1440px;
+margin:0 auto;
+box-shadow:0px 100px 100px -50px #A5AAC3;
+}
+
+#main-Container:after {
+content:'';
+position:fixed;
+background:#E3E8F1;
+width:100%;
+height:100vh;
+top:96px;
+left:0;
+z-index:-2;
+box-shadow:inset 0px -100px 100px #A5AAC3
+}
+
+b {
+font-weight:700;
+}
+
+div {
+border:0px solid #ccc;
+padding:0px;
+}
+
+
+
+/* Globals end */
+
+/* Font sizes */
+
+h1,h2,h3,h4,p {
+leading-trim: both;
+text-edge: cap;
+}
+
+
+
+
+
+.section {
+position:relative;
+display:flex;
+flex-direction:column;
+flex-wrap:nowrap;
+justify-content: flex-start;
+align-items:flex-start;
+align-content:flex-start;
+}
+
+.section.intro {
+height:912px;
+padding: 48px 0px;
+overflow:hidden;
+}
+
+.introBackground-Container {
+z-index:-1;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url(/res/i/grandhouse_leto-viz01.jpg);
+background-size:cover;
+background-position:top center;
+background-repeat: no-repeat;
+}
+
+.introBackground-Container:after {
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background: linear-gradient(180deg, rgba(1, 89, 5, 0.00) 80%, rgba(1, 89, 5, 0.60) 90%);
+}
+
+.introBackgroundShade {
+display:flex;
+flex-direction:column;
+flex-wrap:nowrap;
+justify-content:space-between;
+align-items:flex-start;
+align-content:flex-start;
+}
+
+.header-Container {
+
+align-self:stretch;
+
+display:flex;
+flex-direction:column;
+flex-wrap:nowrap;
+justify-content:space-between;
+align-items:flex-start;
+align-content:flex-start;
+}
+
+.headerText-Container {
+font-family:PP Object sans;
+align-self:stretch;
+
+display:flex;
+flex-direction:column;
+flex-wrap:nowrap;
+justify-content:space-between;
+align-items:flex-start;
+align-content:flex-start;
+gap:24px;
+}
+
+.headerText-Container > .superTitle {
+
+align-self:stretch;
+
+display:flex;
+flex-direction:row;
+flex-wrap:nowrap;
+justify-content:flex-start;
+align-items:center;
+}
+
+.headerText-Container > .title {
+
+position:relative;
+align-self:stretch;
+
+display:flex;
+flex-direction:row;
+flex-wrap:nowrap;
+justify-content:flex-start;
+align-items:center;
+}
+
+.headerText-Container > .title:before{
+content:'';
+position:absolute;
+background:#CC00FF;
+}
+
+.headerText-Container > .description {
+
+align-self:stretch;
+
+display:flex;
+flex-direction:row;
+flex-wrap:nowrap;
+justify-content:flex-start;
+align-items:center;
+}
+
+.introSpacer {
+display:flex;
+flex: 1 0 0;
+align-self: stretch;
+}
+
+.introStats-Container {
+display: flex;
+padding: 0px 96px;
+justify-content: space-evenly;
+align-items: center;
+align-content: center;
+row-gap: 24px;
+align-self: stretch;
+flex-wrap: wrap;
+color:#fff;
+}
+
+.introStatsItem {
+display: flex;
+align-items: center;
+gap: 12px;
+text-shadow:0 2px 4px #333;
+}
+
+.introStatsItem > .title {
+text-wrap: none;
+
+display: flex;
+align-items: center;
+align-self: stretch;
+
+color: var(--unnamed, #FFF);
+text-align: right;
+leading-trim: both;
+text-edge: cap;
+
+/* Ш/Шрифт основной 48@62 */
+font-family: PP Object Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 129.167% */
+}
+
+.introStatsItem > .description {
+display: flex;
+align-items: flex-start;
+align-self: stretch;
+
+color: var(--unnamed, #FFF);
+leading-trim: both;
+text-edge: cap;
+
+/* Ш/Шрифт основной 18@24 */
+font-family: PP Object Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 133.333% */
+}

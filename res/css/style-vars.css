@@ -1,0 +1,28 @@
+:root {
+  --baseSize:12px;
+}
+
+
+	.header-Container h1 {
+		font-size: 72px;
+		line-height: 50px;
+		letter-spacing: -1.4px;
+	}
+	
+	p {
+		font-size: 24px;
+		line-height: 36px;
+	}
+	
+	.header-Container{
+	padding: 48px 144px 24px 144px;
+	color:#272B40;
+	}
+	
+	.headerText-Container > .title:before{
+	width:120px;
+	height:12px;
+	left:-144px;
+	top:36px);
+	}
+
