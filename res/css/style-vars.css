@@ -3,7 +3,7 @@
 }
 
 
-	.header-Container h1 {
+	.header h1 {
 		font-size: 72px;
 		line-height: 50px;
 		letter-spacing: -1.4px;
@@ -14,15 +14,15 @@
 		line-height: 36px;
 	}
 	
-	.header-Container{
+	.header{
 	padding: 48px 144px 24px 144px;
 	color:#272B40;
 	}
 	
-	.headerText-Container > .title:before{
+	.headerText > .title:before{
 	width:120px;
 	height:12px;
 	left:-144px;
-	top:36px);
+	top:36px;
 	}
 

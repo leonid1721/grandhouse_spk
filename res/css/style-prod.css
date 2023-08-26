@@ -2,14 +2,14 @@
 
 .hide {display:none !important;}
 
-#main-Container {
+#main {
 position:relative;
 max-width:1440px;
 margin:0 auto;
 box-shadow:0px 100px 100px -50px #A5AAC3;
 }
 
-#main-Container:after {
+#main:after {
 content:'';
 position:fixed;
 background:#E3E8F1;
@@ -61,7 +61,7 @@ padding: 48px 0px;
 overflow:hidden;
 }
 
-.introBackground-Container {
+.introBackground {
 z-index:-1;
 position:absolute;
 top:0;
@@ -74,7 +74,7 @@ background-position:top center;
 background-repeat: no-repeat;
 }
 
-.introBackground-Container:after {
+.introBackground:after {
 content:'';
 position:absolute;
 top:0;
@@ -93,7 +93,7 @@ align-items:flex-start;
 align-content:flex-start;
 }
 
-.header-Container {
+.header {
 
 align-self:stretch;
 
@@ -105,7 +105,7 @@ align-items:flex-start;
 align-content:flex-start;
 }
 
-.headerText-Container {
+.headerText {
 font-family:PP Object sans;
 align-self:stretch;
 
@@ -118,7 +118,7 @@ align-content:flex-start;
 gap:24px;
 }
 
-.headerText-Container > .superTitle {
+.headerText > .superTitle {
 
 align-self:stretch;
 
@@ -129,7 +129,7 @@ justify-content:flex-start;
 align-items:center;
 }
 
-.headerText-Container > .title {
+.headerText > .title {
 
 position:relative;
 align-self:stretch;
@@ -141,13 +141,13 @@ justify-content:flex-start;
 align-items:center;
 }
 
-.headerText-Container > .title:before{
+.headerText > .title:before{
 content:'';
 position:absolute;
 background:#CC00FF;
 }
 
-.headerText-Container > .description {
+.headerText > .description {
 
 align-self:stretch;
 
@@ -164,7 +164,7 @@ flex: 1 0 0;
 align-self: stretch;
 }
 
-.introStats-Container {
+.introStats {
 display: flex;
 padding: 0px 96px;
 justify-content: space-evenly;
