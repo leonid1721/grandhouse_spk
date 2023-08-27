@@ -1,5 +1,47 @@
 /* TEMP */
 
+.section {
+	position:relative;
+}
+
+#main {
+	position:relative;
+}
+
+.guides {
+	position:absolute;
+	width:1px;
+	height:100%;
+	top:0px;
+	z-index:100;
+	background:cyan;
+	left:96px;
+	display:none;
+}
+
+.guides:nth-of-type(1) {
+	left:144px;
+}
+
+.guides:nth-of-type(2) {
+	left:auto;
+	right:96px;
+}
+440
+.guides:nth-of-type(3) {
+	left:auto;
+	right:96px;
+}
+
+.guides:nth-of-type(4) {
+	left:auto;
+	right:144px;
+}
+
+.guides:nth-of-type(5) {
+	left:720px;
+}
+
 body {
 	background:;
 }
@@ -14,9 +56,14 @@ a:hover {
 	border-bottom:1px solid #A5AAC3;
 }
 
-div {
-	border: 0px solid #ccc;
-	margin:0px;
+divs {
+	box-sizing: border-box;
+	border: 1px solid deepskyblue;
+	margin:4px;
+}
+
+div .text, div .title, div .name {
+	background: ;
 }
 
 /* END TEMP */
@@ -73,6 +120,7 @@ b {
 	--size42px: 42px;
 	--size48px: 48px;
 	--size54px: 54px;
+	--size62px: 62px;
 	--size72px: 72px;
 	--size84px: 84px;
 	--size96px: 96px;
@@ -91,6 +139,7 @@ b {
 	--fixedsize36px: 36px;
 	--fixedsize48px: 48px;
 	--fixedsize54px: 54px;
+	--fixedsize62px: 62px;
 	--fixedsize72px: 72px;
 	--fixedsize84px: 84px;
 	--fixedsize96px: 96px;
@@ -137,6 +186,10 @@ b {
 	--fontSize-7284: var(--size72px);
 	--lineHeight-7284: var(--size84px);
 	
+	/* 48@62 */
+	--fontSize-4862: var(--size48px);
+	--lineHeight-4862: var(--size62px);
+	
 	/* Border radii  */
 	--borderRadius-12: var(--fixedsize12px);
 	--borderRadius-24: var(--fixedsize24px);
@@ -165,9 +218,10 @@ b {
 		--size42px: calc( 42px * var(--ratio1440to768) );
 		--size48px: calc( 48px * var(--ratio1440to768) );
 		--size54px: calc( 54px * var(--ratio1440to768) );
+		--size62px: calc( 62px * var(--ratio1440to768) );
 		--size72px: calc( 72px * var(--ratio1440to768) );
 		--size84px: calc( 84px * var(--ratio1440to768) );
-		--size96px: calc( 96px * var(--ratio1440to768) / 2 );
+		--size96px: calc( 96px * var(--ratio1440to768) );
 		--size120px: calc( 120px * var(--ratio1440to768) );
 		--size144px: calc( 144px * var(--ratio1440to768) );
 		--size240px: calc( 240px * var(--ratio1440to768) );
@@ -303,10 +357,33 @@ body:after {
 }
 
 .section.history {}
-.section.floorplan {}
-.section.interior {}
-.section.exterior {}
-.section.constructive {}
+
+
+.historyDescription > .text {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .section.price {}
 .section.mortgage {}
 .section.outro {}
@@ -321,6 +398,8 @@ body:after {
 	padding:var(--size48px) var(--size96px);
 		background:#eee;
 }
+
+.section
 
 .companyContainer {
 	gap:var(--size24px);
@@ -350,6 +429,7 @@ body:after {
 	line-height:var(--lineHeight-2436);
 	text-align:right;
 	padding:var(--size48px);
+	z-index:2
 }
 
 .companyItem:nth-child(even) > .companyText > .text {
@@ -619,3 +699,12 @@ body:after {
 .showcaseBackground:after {
 	background: linear-gradient(180deg, rgba(1, 89, 5, 0.00) 80%, rgba(1, 89, 5, 0.60) 90%);
 }
+
+
+
+
+
+
+
+
+

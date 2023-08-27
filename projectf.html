@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>HTML 5 Boilerplate</title>
+<title>Грандахаус: строим дома в которых вы будете счастливы</title>
 <link rel="stylesheet" href="res/css/reset.css">
-<link rel="stylesheet" href="res/css/project.css">
+<link rel="stylesheet" href="res/css-final/globals.css">
+<link rel="stylesheet" href="res/css-final/components.css">
+<link rel="stylesheet" href="res/css-final/style.css">
 </head>
+
 <body>
+<!-- MAIN -->
 <div id="main">
 
+
+<!-- GUIDES -->
+<div>
+<div class="guides"></div>
+<div class="guides"></div>
+<div class="guides"></div>
+<div class="guides"></div>
+<div class="guides"></div>
+</div>
+<!-- END GUIDES -->
+
+<!-- NAVIGATION -->
 <div class="section navigation">
 	<div class="navigationBar">
 		<div class="navigationItem logo">
@@ -45,26 +62,17 @@
 		</div>
 	</div>
 </div>
+<!-- END NAVIGATION -->
 
-	<div class="header">
-		<div class="headerText">
-			<div class="headerSuperTitle">
-				<div class="text">Серийный проект</div>
-			</div>
-			<div class="headerTitle">
-				<div class="text">Грандхаус <b>Лето</b></div>
-			</div>
-			<div class="headerDescription">
-				<div class="text">Расскажем немного о планировке нашего нового серийного дома "Грандхаус Лето" Базовая планировка «Грандхаус Лето» включает большую 30-метровую гостиную-столовую, 12-метровую кухню, три спальни, две ванные комнаты и террасу. </div>
-			</div>
-		</div>
-	</div>
+<!-- INTRO -->
+<!-- END INTRO -->
 
+<!-- SHOWCASE -->
 <div class="section showcase">
 
 
 
-	<div class="quote">
+	<div class="quote" data-type="component">
 		<div class="quoteText">
 			<div class="text">«Светлый, удобный, функциональный и гостеприимный — таким мы задумали и сделали «Грандхаус Лето», наш новый серийный загородный дом»</div>
 		</div>
@@ -74,7 +82,305 @@
 		</div>
 	</div>
 </div>
+<!-- END SHOWCASE -->
 
+
+<!-- HISTORY -->
+<div class="header history" data-type="component">
+	<div class="headerText">
+		<div class="headerSuperTitle">
+			<div class="text hide"></div>
+		</div>
+			<div class="headerTitle">
+				<div class="text">Наш идеальный дом</div>
+			</div>
+			<div class="headerDescription">
+				<div class="text">Расскажем немного о планировке нашего нового серийного дома "Грандхаус Лето" Базовая планировка «Грандхаус Лето» включает большую 30-метровую гостиную-столовую, 12-метровую кухню, три спальни, две ванные комнаты и  террасу.</div>
+		</div>
+	</div>
+</div>
+<div class="section history">
+
+	<div class="roundItems" data-type="component">
+		<div class="roundItem" style="background-image:url()"><div class="zoom center"></div></div>
+		<div class="roundItem" style="background-image:url()"><div class="zoom center"></div></div>
+		<div class="roundItem" style="background-image:url()"><div class="zoom center"></div></div>
+	</div>
+
+	<div class="twoColumnDescription" data-type="component">
+		<div class="text">
+			<p>«Мы проанализировали весь наш 8-летний строительный опыт,» — рассказывает генеральный директор компании Никита Кузнецов. «Перебрали каждый проект, которым когда-либо занимались  — всего их  более 500  — изучили предпроектые пожелания и  отзывы наших клиентов, и  составили список „общих знаменателей“  — наиболее востребованных особенностей, которые большинство семей хотели  бы видеть в  своем доме».</p>
+		</div>
+		<div class="text">
+			<p>Десять разнопрофильных специалистов компании  — архитекторы, конструкторы, строители, визуализаторы и  менеджеры по  работе с  клиентами  — трудились более года, чтобы воплотить в  жизнь этот проект.</p>
+		</div>
+	</div>
+
+	<div class="quote" data-type="component">
+		<div class="quoteText">
+			<div class="text">Мы прошли через множество этапов обсуждений и правок, и в итоге создали выверенную планировку, в которой нет ни одного случайного решения. Предусмотрели все сценарии жизни семьи из 3-5 человек в 145-метровом частном доме</div>
+		</div>
+		<div class="quoteAuthor">
+			<div class="picture" style="background-image:url()"></div>
+			<div class="text">NAME</div>
+		</div>
+	</div>
+
+</div>
+<!-- END HISTORY -->
+
+
+<!-- FLOORPLAN -->
+<div class="header floorplan" data-type="component">
+	<div class="headerText">
+		<div class="headerSuperTitle">
+			<div class="text hide"></div>
+		</div>
+			<div class="headerTitle">
+				<div class="text">Планировка</div>
+			</div>
+			<div class="headerDescription">
+				<div class="text">Базовая планировка «Грандхаус Лето» включает большую 30-метровую гостиную-столовую, 12-метровую кухню, три спальни, две ванные комнаты и террасу. </div>
+		</div>
+	</div>
+</div>
+<div class="section floorplan">
+
+	<div class="floorplanPlans">
+		<div class="plansControls"></div>
+		<div class="planSlider">
+				<div class="slide">
+					<div class="image"></div>
+					<div class="text hide"></div>
+				</div>
+		</div>
+	</div>
+
+	<div class="twoColumnDescription" data-type="component">
+		<div class="text">
+			<p>Планировка универсальна и легко переигрывается. Семья с одним ребенком может использовать малую спальню как кабинет, а при пополнении семейства превратить ее во вторую детскую. </p>
+			<p>Вход в оба санузла может быть как из коридора, так и раздельным (в один с/у из коридора, во второй — из мастер-спальни). </p>
+		</div>
+		<div class="text">
+			<p>Терраса располагается позади дома, во внутреннем дворе, но в зависимости от конфигурации участка ее легко пристроить и сбоку.</p>
+		</div>
+	</div>
+
+</div>
+<!-- END FLOORPLAN -->
+
+
+<!-- INTERIOR -->
+<div class="header interior" data-type="component">
+	<div class="headerText">
+		<div class="headerSuperTitle">
+			<div class="text hide"></div>
+		</div>
+			<div class="headerTitle">
+				<div class="text">Интерьер</div>
+			</div>
+			<div class="headerDescription">
+				<div class="text">Вводка про интерьер</div>
+		</div>
+	</div>
+</div>
+<div class="section interior">
+
+	<div class="interiorGallery" data-type="component">
+		<div class="sliderControls"  data-type="component">
+			<div class="arrowLeft"></div>
+			<div class="arrowRight"></div>
+		</div>
+		<div class="galleryItem" style="background-image:url()">
+			<div class="zoom"></div>
+			<div class="details"></div>
+		</div>
+		<div class="galleryItem" style="background-image:url()">
+			<div class="zoom"></div>
+			<div class="details"></div>
+		</div>
+	</div>
+
+</div>
+<!-- END INTERIOR -->
+
+
+<!-- EXTERIOR -->
+<div class="header exterior" data-type="component">
+	<div class="headerText">
+		<div class="headerSuperTitle">
+			<div class="text hide"></div>
+		</div>
+			<div class="headerTitle">
+				<div class="text">Наружняя отделка</div>
+			</div>
+			<div class="headerDescription">
+				<div class="text">Вводка про наружнюю отделку</div>
+		</div>
+	</div>
+</div>
+<div class="section exterior">
+
+	<div class="exteriorMaterials">
+		<div class="material">
+			<div class="title">Облицовка стен</div>
+			<div class="image" style="background-image:url()"></div>
+			<div class="text">Кирпич<br/>керамический</div>
+		</div>
+		<div class="material">
+			<div class="title">Отделка фундамента</div>
+			<div class="image" style="background-image:url()"></div>
+			<div class="text">Кирпич<br/>керамический</div>
+		</div>
+		<div class="material">
+			<div class="title">Облицовка стен</div>
+			<div class="image" style="background-image:url()"></div>
+			<div class="text">Кирпич<br/>керамический</div>
+		</div>
+		<div class="material">
+			<div class="title">Облицовка стен</div>
+			<div class="image" style="background-image:url()"></div>
+			<div class="text">Кирпич<br/>керамический</div>
+		</div>
+	</div>
+
+</div>
+<!-- END EXTERIOR -->
+
+
+<!-- CONSTRUCTIVE -->
+<div class="header constructive" data-type="component">
+	<div class="headerText">
+		<div class="headerSuperTitle">
+			<div class="text hide"></div>
+		</div>
+			<div class="headerTitle">
+				<div class="text">Конструктивные особенности</div>
+			</div>
+			<div class="headerDescription">
+				<div class="text">Вводка про конструктивные особености.</div>
+		</div>
+	</div>
+</div>
+<div class="section constructive">
+
+	<div class="constructiveAxes">
+
+		<div class="axis">
+			<div class="image"></div>
+			<div class="title">Ось 1</div>
+		</div>
+		<div class="axis">
+			<div class="image"></div>
+			<div class="title">Ось 2</div>
+		</div>
+
+	</div>
+
+	<div class="constructiveDetails">
+
+		<div class="detail">
+			<div class="title">Коробка</div>
+			<div class="text">Более 500 реализованных проектов по всей России. Наш проектный отдел с профессиональными архитекторами и конструкторами спроектирует</div>
+		</div>
+
+		<div class="detail">
+			<div class="title">Коробка</div>
+			<div class="text">Более 500 реализованных проектов по всей России. Наш проектный отдел с профессиональными архитекторами и конструкторами спроектирует</div>
+		</div>
+
+		<div class="detail">
+			<div class="title">Коробка</div>
+			<div class="text">Более 500 реализованных проектов по всей России. Наш проектный отдел с профессиональными архитекторами и конструкторами спроектирует</div>
+		</div>
+
+		<div class="detail">
+			<div class="title">Коробка</div>
+			<div class="text">Более 500 реализованных проектов по всей России. Наш проектный отдел с профессиональными архитекторами и конструкторами спроектирует</div>
+		</div>
+
+	</div>
+
+	<div class="constructiveInfo">
+
+		<div class="infoText">
+			<div class="text">
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+		</div>
+
+		<div class="infoTable">
+
+		</div>
+
+	</div>
+
+	<!-- component attention -->
+
+	<div class="attention" data-type="component">
+		<div class="attentionIcon" style="background-image:url()"></div>
+		<div class="attentionText">
+			<div class="text">Возможно внесение изменений по параметрам проекта (размеры, материалы, планировка) согласно вашим пожеланиям</div>
+		</div>
+	</div>
+
+</div>
+<!-- END CONSTRUCTIVE -->
+
+
+<!-- PRICE -->
+<div class="header price" data-type="component">
+	<div class="headerText">
+		<div class="headerSuperTitle">
+			<div class="text hide"></div>
+		</div>
+			<div class="headerTitle">
+				<div class="text">Цена</div>
+			</div>
+			<div class="headerDescription">
+				<div class="text">Вводка про цену</div>
+		</div>
+	</div>
+</div>
+<div class="section price">SECTION PRICE</div>
+<!-- END PRICE -->
+
+
+<!-- MORTGAGE -->
+<div class="header mortgage" data-type="component">
+	<div class="headerText">
+		<div class="headerSuperTitle">
+			<div class="text hide"></div>
+		</div>
+			<div class="headerTitle">
+				<div class="text">Ипотека</div>
+			</div>
+			<div class="headerDescription">
+				<div class="text">Вводка про ипотеку</div>
+		</div>
+	</div>
+</div>
+<div class="section mortgage">SECTION MORTGAGE</div>
+<!-- END MORTGAGE -->
+
+
+<!-- OUTRO -->
+<div class="section outro">
+
+	<div class="roundItems" data-type="component">
+		<div class="roundItem" style="background-image:url()"><div class="zoom center"></div></div>
+		<div class="roundItem" style="background-image:url()"><div class="zoom center"></div></div>
+		<div class="roundItem" style="background-image:url()"><div class="zoom center"></div></div>
+	</div>
+
+	SECTION OUTRO
+</div>
+<!-- END OUTRO -->
+
+
+<!-- COMPANY -->
 <div class="header company">
 	<div class="headerText">
 		<div class="headerSuperTitle hide">
@@ -84,21 +390,49 @@
 			<div class="text">О нашей компании</div>
 		</div>
 		<div class="headerDescription">
-			<div class="text">Мы строим по собственным проектам, а также проектируем дома, бани и любые другие строения с нуля — из камня, рубленного бревна, профилированного и клееного бруса. </div>
+			<div class="text">Мы  строим по  собственным проектам, а  также проектируем дома, бани и  любые другие строения с  нуля — из  камня, рубленного бревна, профилированного и  клееного бруса. </div>
 		</div>
 	</div>
 </div>
-
-
 <div class="section company">
 	<div class="companyContainer">
+
+		/* Component featured */
+		<div class="companyItem featured">
+
+			<div class="featuredItem">
+				<div class="featuredIcon iconTree"></div>
+				<div class="featuredText">
+					<div class="title">На рынке с 2015 года</div>
+					<div class="text hide"></div>
+				</div>
+			</div>
+
+			<div class="featuredItem">
+				<div class="featuredIcon iconClient"></div>
+				<div class="featuredText">
+					<div class="title">500 клиентов</div>
+					<div class="text">по всей России</div>
+				</div>
+			</div>
+
+			<div class="featuredItem">
+				<div class="featuredIcon iconCycle"></div>
+				<div class="featuredText">
+					<div class="title">Полный цикл</div>
+					<div class="text">от проекта до строительства и отделки</div>
+				</div>
+			</div>
+
+		</div>
+		/* End component featured */
 
 		<div class="companyItem">
 			<div class="companyText">
 				<div class="text">более 500 реализованных проектов по всей России. Наш проектный отдел с профессиональными архитекторами и конструкторами спроектирует для вас теплый, красивый и надежный дом, а опытные строители — быстро и качественно возведут его под ключ. </div>
 			</div>
 			<div class="companySlider slider">
-				<div class="companySliderControls"></div>
+				<div class="companySliderControls"  data-type="component"></div>
 				<div class="companySliderItem" style="background:url()"></div>
 				<div class="companySliderItem" style="background:url()"></div>
 				<div class="companySliderItem" style="background:url()"></div>
@@ -112,7 +446,7 @@
 				<div class="text">более 500 реализованных проектов по всей России. Наш проектный отдел с профессиональными архитекторами и конструкторами спроектирует для вас теплый, красивый и надежный дом, а опытные строители — быстро и качественно возведут его под ключ. </div>
 			</div>
 			<div class="companySlider slider">
-				<div class="companySliderControls"></div>
+				<div class="companySliderControls"  data-type="component"></div>
 				<div class="companySliderItem" style="background:url()"></div>
 				<div class="companySliderItem" style="background:url()"></div>
 				<div class="companySliderItem" style="background:url()"></div>
@@ -131,10 +465,10 @@
 
 	</div>
 </div>
+<!-- END COMPANY -->
 
-
+<!-- FOOTER -->
 <div class="section footer">
-
 	<div class="footerSocials">
 		<div class="socialsTitle">
 			<div class="text">Подпишитесь на нас в соцсетях</div>
@@ -191,8 +525,10 @@
 	</div>
 
 </div>
+<!-- END FOOTER -->
 
 
 </div>
+<!-- END MAIN -->
 </body>
 </html>

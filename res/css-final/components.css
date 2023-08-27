@@ -1,0 +1,188 @@
+/* *********************** COMPONENTS *********************** */
+
+div[data-type="component"] {
+
+}
+
+/* Component roundItems */
+
+.roundItems {
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content:center;
+	
+	gap:var(--size48px);
+	
+	padding:var(--size0px) var(--size48px);
+
+}
+
+.roundItem {
+	width:288px;
+	height:288px;
+	border-radius:100%;
+	border:var(--size12px) solid #78cdee;
+	background:#eee;
+	
+	position:relative;
+}
+
+.roundItem:before {
+	content:'';
+	position:absolute;
+	width:324px;
+	height:324px;
+	left:-30px;
+	top:-30px;
+	border-radius:100%;
+	border:1px solid #ccc;
+}
+
+
+/* Component twoColumnDescription */
+
+.twoColumnDescription {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+	
+	gap:var(--size12px) var(--size48px);
+	
+	padding:var(--size0px) var(--size48px);
+
+}
+
+.twoColumnDescription > .text {
+
+	flex:1 1 0;
+
+	font-size:var(--fontSize-2436);
+	line-height:var(--lineHeight-2436);
+	
+}
+
+.twoColumnDescription > .text > p {
+
+}
+
+/* Zoom and details component need to be re-done as a flexbox + include a slider button panel */
+
+/* Component zoom */
+
+.zoom {
+
+	position:absolute;
+ 	bottom:24px;
+	right:24px;
+	width:24px;
+	height:24px;
+	background-color:#fff;
+	background-image:url();
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	
+}
+
+.zoom.center {
+
+	position:absolute;
+ 	bottom:24px;
+	left:calc(50% - 12px);
+	width:24px;
+	height:24px;
+	background-color:#fff;
+	background-image:url();
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	
+}
+
+/* Component details */
+
+.details {
+
+	position:absolute;
+	bottom:24px;
+	left:24px;
+	width:48px;
+	height:24px;
+	background:#fff;
+	border-radius:24px;
+}
+
+.details:before {
+	content:'';
+	position:absolute;
+	left:26px;
+	width:18px;
+	height:18px;
+	top:2px;
+	background:#00c2ff;
+	border-radius:100%;
+}
+
+.details:after {
+	position:absolute;
+	left:54px;
+	bottom:6px;
+	content:'Особенности';
+	text-wrap:nowrap;
+	font-family:PP Object sans;
+	font-size:10px;
+
+}
+
+/* Component sliderControls */
+/* parent container requires + 48px margin-bottom */
+
+.sliderControls {
+
+	position:absolute;
+	border:1px solid #fff;
+	border-radius:48px;
+	left:-48px;
+	top:-48px;
+	height:calc(100% + 96px);
+	width:calc(100% + 96px);
+
+}
+
+.sliderControls > .arrowLeft {
+
+	position:absolute;
+	width:48px;
+	height:48px;
+	top:calc(50% - 24px);
+	left:-24px;
+	background:#fff;
+	z-index:3;
+	border-radius:100%;
+
+}
+
+.sliderControls > .arrowRight {
+
+	position:absolute;
+	width:48px;
+	height:48px;
+	top:calc(50% - 24px);
+	right:-24px;
+	background:#fff;
+	z-index:3;
+	border-radius:100%;
+
+}
+
+/* Component attention */
+
+/* *********************** END COMPONENTS *********************** */
