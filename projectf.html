@@ -5,19 +5,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Грандахаус: строим дома в которых вы будете счастливы</title>
+<title>Грандхаус: строим дома в которых вы будете счастливы</title>
 <link rel="stylesheet" href="res/css/reset.css">
 <link rel="stylesheet" href="res/css-final/globals.css">
 <link rel="stylesheet" href="res/css-final/components.css">
 <link rel="stylesheet" href="res/css-final/style.css">
+<link rel="stylesheet" href="res/css-final/fonts.css">
+
+
+<!-- Blaze Slider -->
+<script src="res/external/blazeslider/blaze-slider.min.js"></script>
+<link rel="stylesheet" href="res/external/blazeslider/blaze.css">
 </head>
 
 <body>
 
 <!-- MAIN -->
 <div id="main">
-
-
 
 
 <!-- GUIDES -->
@@ -37,39 +41,55 @@
 			<div class="text">Грандхаус</div>
 		</div>
 		<div class="navigationItem">
-			<div class="text">Грандхаус <b>Лето</b></div>
+			<a href="#intro"><div class="text scrollNav" data-target="intro">Грандхаус <b>Лето</b></div></a>
 		</div>
 		<div class="navigationItem">
-			<div class="text">История</div>
+			<a href="#history"><div class="text scrollNav" data-target="history">История</div></a>
 		</div>
 		<div class="navigationItem">
-			<div class="text">Планировка</div>
+			<a href="#floorplan"><div class="text scrollNav" data-target="floorplan">Планировка</div></a>
 		</div>
 		<div class="navigationItem">
-			<div class="text">Интерьер</div>
+			<a href="#interior"><div class="text scrollNav" data-target="interior">Интерьер</div></a>
 		</div>
 		<div class="navigationItem">
-			<div class="text">Конструктив</div>
+			<a href="#constructive"><div class="text scrollNav" data-target="constructive">Конструктив</div></a>
 		</div>
 		<div class="navigationItem">
-			<div class="text">Смета</div>
+			<a href="#price"><div class="text scrollNav" data-target="price">Смета</div></a>
 		</div>
 		<div class="navigationItem">
-			<div class="text">Ипотека</div>
+			<a href="#mortgage"><div class="text scrollNav" data-target="mortgage">Ипотека</div></a>
 		</div>
 		<div class="navigationItem">
-			<div class="text">О нас</div>
+			<a href="#company"><div class="text scrollNav" data-target="company">О нас</div></a>
 		</div>
 		<div class="navigationItem button">
-			<div class="text">Оставить заявку</div>
+			<div class="text scrollNav">Оставить заявку</div>
 		</div>
 	</div>
 </div>
 <!-- END NAVIGATION -->
 
-<!-- INTRO -->
 
-<div class="section intro">
+<!-- INTRO -->
+<div class="section intro" style="padding-top:328px !important;">
+
+	<div class="introGradient"></div>
+
+	<div class="header intro" data-type="component" id="intro">
+	<div class="headerText">
+		<div class="headerSuperTitle">
+			<div class="text">Серийный проект</div>
+		</div>
+			<div class="headerTitle">
+				<div class="text">Грандхаус <b>Лето</b></div>
+			</div>
+			<div class="headerDescription">
+				<div class="text hide"></div>
+		</div>
+	</div>
+</div>
 
 </div>
 
@@ -94,7 +114,7 @@
 
 
 <!-- HISTORY -->
-<div class="header history" data-type="component">
+<div class="header history" data-type="component" id="history">
 	<div class="headerText">
 		<div class="headerSuperTitle">
 			<div class="text hide"></div>
@@ -139,7 +159,7 @@
 
 
 <!-- FLOORPLAN -->
-<div class="header floorplan" data-type="component">
+<div class="header floorplan" data-type="component" id="floorplan">
 	<div class="headerText">
 		<div class="headerSuperTitle">
 			<div class="text hide"></div>
@@ -179,7 +199,7 @@
 
 
 <!-- INTERIOR -->
-<div class="header interior" data-type="component">
+<div class="header interior" data-type="component" id="interior">
 	<div class="headerText">
 		<div class="headerSuperTitle">
 			<div class="text hide"></div>
@@ -238,7 +258,7 @@
 
 
 <!-- EXTERIOR -->
-<div class="header exterior" data-type="component">
+<div class="header exterior" data-type="component" id="exterior">
 	<div class="headerText">
 		<div class="headerSuperTitle">
 			<div class="text hide"></div>
@@ -281,7 +301,7 @@
 
 
 <!-- CONSTRUCTIVE -->
-<div class="header constructive" data-type="component">
+<div class="header constructive" data-type="component" id="constructive">
 	<div class="headerText">
 		<div class="headerSuperTitle">
 			<div class="text hide"></div>
@@ -393,7 +413,7 @@
 
 
 <!-- PRICE -->
-<div class="header price" data-type="component">
+<div class="header price" data-type="component" id="price">
 	<div class="headerText">
 		<div class="headerSuperTitle">
 			<div class="text hide"></div>
@@ -411,7 +431,7 @@
 
 
 <!-- MORTGAGE -->
-<div class="header mortgage" data-type="component">
+<div class="header mortgage" data-type="component" id="mortgage">
 	<div class="headerText">
 		<div class="headerSuperTitle">
 			<div class="text hide"></div>
@@ -429,7 +449,7 @@
 
 
 <!-- OUTRO -->
-<div class="section outro">
+<div class="section outro" id="outro">
 
 	<div class="roundItems" data-type="component">
 		<div class="roundItem" style="background-image:url()"><div class="zoom center"></div></div>
@@ -443,7 +463,7 @@
 
 
 <!-- COMPANY -->
-<div class="header company">
+<div class="header company" id="company">
 	<div class="headerText">
 		<div class="headerSuperTitle hide">
 			<div class="text"></div>
@@ -593,9 +613,43 @@
 </div>
 <!-- END MAIN -->
 
+<div class="blaze-slider">
+  <div class="blaze-container">
+    <div class="blaze-track-container">
+      <div class="blaze-track">
+        <div>slide 1</div>
+        <div>slide 2</div>
+        <div>slide 3</div>
+        <div>slide 4</div>
+      </div>
+
+      <!-- pagination container -->
+      <div class="my-pagination-container">
+        <div class="blaze-pagination"></div>
+      </div>
+    </div>
+
+    <!-- navigation buttons -->
+    <div class="my-nav-container">
+      <button class="blaze-prev">previous</button>
+      <button class="blaze-next">next</button>
+    </div>
+  </div>
+</div>
+
 <script>
-	window.onload=function(){
-    }
+// Simple navigation scroll
+document.addEventListener('click', function(event) {
+	if (!event.target.matches('.scrollNav')) return;
+		event.preventDefault();
+		var element = document.getElementById(event.target.dataset.target);
+		element.scrollIntoView({behavior: "smooth"});
+});
+
+const el = document.querySelector('.blaze-slider');
+new BlazeSlider(el);
+
 </script>
+
 </body>
 </html>

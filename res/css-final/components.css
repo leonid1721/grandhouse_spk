@@ -23,7 +23,7 @@ div[data-type="component"] {
 
 .roundItem {
 	width:288px;
-	height:288px;
+	min-height:288px;
 	border-radius:100%;
 	border:var(--size12px) solid #78cdee;
 	background:#eee;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Грандахаус: строим дома в которых вы будете счастливы</title>
+<link rel="stylesheet" href="res/css/reset.css">
+<link rel="stylesheet" href="res/css-final/globals.css">
+<link rel="stylesheet" href="res/css-final/components.css">
+<link rel="stylesheet" href="res/css-final/style.css">
+<link rel="stylesheet" href="res/css-final/fonts.css">
+
+<!-- Blaze Slider -->
+<script src="res/external/blazeslider/blaze-slider.min.js"></script>
+<link rel="stylesheet" href="res/external/blazeslider/blaze.css">
+</head>
+
+<body>
+
+
+<div class="blaze-slider">
+  <div class="blaze-container">
+    <div class="blaze-track-container">
+      <div class="blaze-track">
+        <div>slide 1</div>
+        <div>slide 2</div>
+        <div>slide 3</div>
+        <div>slide 4</div>
+      </div>
+
+      <!-- pagination container -->
+      <div class="my-pagination-container">
+        <div class="blaze-pagination"></div>
+      </div>
+    </div>
+
+    <!-- navigation buttons -->
+    <div class="my-nav-container">
+      <button class="blaze-prev">previous</button>
+      <button class="blaze-next">next</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+window.onload=function() {
+const el = document.querySelector('.blaze-slider')
+new BlazeSlider(el)
+}
+</script>
+
+
+
+</body>
+</html>
