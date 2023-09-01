@@ -26,6 +26,10 @@
 	--fontSize-1624: var(--size16px);
 	--lineHeight-1624: var(--size24px);
 	
+	/* 18@24 */
+	--fontSize-1824: var(--size18px);
+	--lineHeight-1824: var(--size24px);
+	
 	/* 72@84 */
 	--fontSize-7284: var(--size72px);
 	--lineHeight-7284: var(--size84px);

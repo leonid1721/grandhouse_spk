@@ -748,5 +748,12 @@
 			--size1434px: calc( 1434px * var(--ratio768to1440) );
 			--size1440px: calc( 1440px * var(--ratio768to1440) );
 			
+			
+			/* Fixed sizes are redefined on a per case basis */
+			
+			
+			--fixedsize96px: 24px;
+			
+			
 	}
 }

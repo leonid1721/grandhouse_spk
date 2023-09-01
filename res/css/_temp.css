@@ -21,37 +21,37 @@ body {
 	height:100%;
 	top:0px;
 	z-index:100;
-	background:cyan;
+	background:lightcyan;
 	left:96px;
-	display:block;
+	display:none;
 }
 
 .guides:nth-of-type(1) {
-	left:144px;
+	left:var(--size144px);
 }
 
 .guides:nth-of-type(2) {
 	left:auto;
-	right:96px;
+	right:var(--size96px);
 }
 
 .guides:nth-of-type(3) {
 	left:auto;
-	right:96px;
+	right:var(--size96px);
 }
 
 .guides:nth-of-type(4) {
 	left:auto;
-	right:144px;
+	right:var(--size144px);
 }
 
 .guides:nth-of-type(5) {
-	left:720px;
+	left:var(--size720px);
 }
 
 
 
-divs {
+divs:not(.guides, #main) {
 	box-sizing: border-box;
 	border: 1px solid deepskyblue;
 	margin:4px;
