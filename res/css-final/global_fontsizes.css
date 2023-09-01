@@ -1,0 +1,50 @@
+:root {
+
+	/* Font sizes fontSize@lineHeight */
+	
+	/* 24@32 */
+	--fontSize-2432: var(--size24px);
+	--lineHeight-2432: var(--size32px);
+	
+	/* 24@32 */
+	--fontSize-2436: var(--size24px);
+	--lineHeight-2436: var(--size36px);
+	
+	/* 36@42 */
+	--fontSize-3642: var(--size36px);
+	--lineHeight-3642: var(--size42px);
+	
+	/* 14@16 */
+	--fontSize-1416: var(--size14px);
+	--lineHeight-1416: var(--size16px);
+	
+	/* 16@16 */
+	--fontSize-1616: var(--size16px);
+	--lineHeight-1616: var(--size16px);
+
+	/* 16@24 */
+	--fontSize-1624: var(--size16px);
+	--lineHeight-1624: var(--size24px);
+	
+	/* 72@84 */
+	--fontSize-7284: var(--size72px);
+	--lineHeight-7284: var(--size84px);
+	
+	/* 48@62 */
+	--fontSize-4862: var(--size48px);
+	--lineHeight-4862: var(--size62px);
+	
+	/* Border radii  */
+	--borderRadius-12: var(--fixedsize12px);
+	--borderRadius-24: var(--fixedsize24px);
+	--borderRadius-48: var(--fixedsize48px);
+	
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (width < 768px ) {
+	:root {
+			
+	}
+}

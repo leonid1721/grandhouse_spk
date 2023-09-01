@@ -1,0 +1,64 @@
+/* TEMP */
+
+.check {
+position:fixed;
+top:0;
+right:0;
+}
+
+.section {
+	position:relative;
+}
+
+body {
+
+}
+
+
+.guides {
+	position:absolute;
+	width:1px;
+	height:100%;
+	top:0px;
+	z-index:100;
+	background:cyan;
+	left:96px;
+	display:block;
+}
+
+.guides:nth-of-type(1) {
+	left:144px;
+}
+
+.guides:nth-of-type(2) {
+	left:auto;
+	right:96px;
+}
+
+.guides:nth-of-type(3) {
+	left:auto;
+	right:96px;
+}
+
+.guides:nth-of-type(4) {
+	left:auto;
+	right:144px;
+}
+
+.guides:nth-of-type(5) {
+	left:720px;
+}
+
+
+
+divs {
+	box-sizing: border-box;
+	border: 1px solid deepskyblue;
+	margin:4px;
+}
+
+div .text, div .title, div .name {
+	background: ;
+}
+
+/* END TEMP */
