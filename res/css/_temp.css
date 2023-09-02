@@ -20,10 +20,10 @@ body {
 	width:1px;
 	height:100%;
 	top:0px;
-	z-index:100;
+	z-index:8;
 	background:lightcyan;
 	left:96px;
-	display:none;
+	display:;
 }
 
 .guides:nth-of-type(1) {
@@ -51,7 +51,7 @@ body {
 
 
 
-divs:not(.guides, #main) {
+div:not(.guides, #main, .picture, .borderFrame) {
 	box-sizing: border-box;
 	border: 1px solid deepskyblue;
 	margin:4px;

@@ -88,10 +88,6 @@ b {
 
 
 
-.section.showcase {
-	padding: var(--size48px) var(--size96px);
-	background:blue;
-}
 
 .section.history {}
 
@@ -334,15 +330,6 @@ b {
 
 
 
-
-.showcaseBackground {
-	z-index: -1;
-	background: url();
-	background-position: top center;
-}
-.showcaseBackground:after {
-	background: linear-gradient(180deg, rgba(1, 89, 5, 0.00) 80%, rgba(1, 89, 5, 0.60) 90%);
-}
 
 
 

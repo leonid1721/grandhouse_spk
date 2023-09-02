@@ -75,12 +75,13 @@ div[data-type="component"] {
 
 .quote {
 	position: relative;
-		display: flex;
+	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: center;
 	align-content: flex-start;
+	
 	
 }
 
@@ -89,7 +90,7 @@ div[data-type="component"] {
 	border-radius: var(--borderRadius-24);
 	background: var(--color-light-white80opacity);
 	backdrop-filter: blur(40px);
-		display: flex;
+	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
@@ -107,6 +108,7 @@ div[data-type="component"] {
 }
 
 .quoteAuthor {
+
 	z-index: 1;
 	gap: var(--size12px);
 	display: flex;
@@ -117,26 +119,20 @@ div[data-type="component"] {
 	align-content: flex-start;
 	
 	position: relative;
+	
 }
 
 .quoteAuthor > .picture {
-	margin-top: calc( var(--size54px) * -1 );
+	margin-top:calc( var(--fixedsize54px) * -1) !important;
 	width: var(--fixedsize96px);
 	height: var(--fixedsize96px);
 	border-radius: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #eee;
-	border: var(--fixedsize6px) solid #fff;
+	background-position:center center;
+	border:var(--size6px) solid #fff;
 	
-		display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: flex-start;
-	
-	position: relative;
+
 	
 }
 .quoteAuthor > .text {
@@ -293,7 +289,7 @@ div[data-type="component"] {
 /* Component sliderControls */
 /* parent container requires + 48px margin-bottom */
 
-.sliderControls {
+.sliderControl {
 
 	position:absolute;
 	border:1px solid #fff;

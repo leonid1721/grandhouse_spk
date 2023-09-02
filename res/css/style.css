@@ -38,7 +38,7 @@ body {
 
 	position:fixed;
 	
-	z-index:10;
+	z-index:1000;
 
 	width:100%;
 	max-width:1440px;
@@ -60,6 +60,7 @@ body {
 	box-shadow: 0 10px 15px -25px #272B40;
 	
 	overflow:hidden;
+
 
 }
 
@@ -130,7 +131,7 @@ body {
 
 }
 
-.introBackground, .introGradient {
+.section.intro > .background, .section.intro > .gradient {
 
 	position:absolute;
 	top:0;
@@ -145,13 +146,13 @@ body {
 	
 }
 
-.introBackground {
+.section.intro > .background {
 
 	z-index:-2;
 	
 }
 
-.introGradient {
+.section.intro > .gradient {
 
 	z-index:-1;
 	
@@ -210,6 +211,230 @@ body {
 
 
 /* SECTION SHOWCASE */
+
+.section.showcase {
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: flex-start;
+	
+	position: relative;
+	
+	padding:var(--size96px) var(--size96px);
+	
+	gap:var(--size48px);
+
+}
+
+.section.showcase > .background, .section.showcase > .gradient {
+
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background-size:cover;
+	background-position:top center;
+	background-repeat:no-repeat;
+	
+	/* Backgrounds are defined inline */
+	
+}
+
+.section.showcase > .background {
+
+	z-index:-2;
+	
+}
+
+.section.showcase > .gradient {
+
+	z-index:-1;
+	
+}
+
+.section.showcase > .borderFrame {
+
+	position:absolute;
+	top:var(--size48px);
+	left:var(--size48px);
+	height:calc( 100% - var(--size96px) );
+	width:calc( 100% - var(--size96px) );
+	border:1px solid #fff;
+	border-radius:var(--borderRadius-48);
+	z-index:20;
+}
+
+
+
+
+.showcaseSlider {
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: flex-start;
+	
+	position: relative;
+	
+	border-radius:var(--borderRadius-24);
+	
+	height:480px;
+
+}
+
+.showcaseSlider .sliderControl {
+	
+	position:absolute;
+	width:100%;
+	height:100%;
+	
+	left:calc( var(--size48px) * -1);
+	top:calc( var(--size48px) * -1);
+	height:calc(100% + var(--size96px));
+	width:calc(100% + var(--size96px));
+
+}
+
+.sliderControl > .arrowLeft, .sliderControl > .arrowRight  {
+
+	position:absolute;
+	display:block;
+	width:var(--fixedsize48px);
+	height:var(--fixedsize48px);
+	top:calc( 50% - var(--fixedsize24px) );
+	background:#fff;
+	z-index:90;
+	border-radius:100%;
+	cursor: pointer;
+
+}
+
+.sliderControl > .arrowLeft:hover, .sliderControl > .arrowRight:hover {
+
+	background:#eee;
+
+}
+
+.sliderControl > .arrowLeft {
+
+	left:calc( var(--fixedsize24px) * -1);
+
+}
+
+.sliderControl > .arrowRight {
+
+	right:calc( var(--fixedsize24px) * -1);
+
+}
+
+.sliderControl > .arrowLeft:after, .sliderControl > .arrowRight:after {
+
+	content:'';
+	position:absolute;
+	top:12px;
+	width:var(--fixedsize24px);
+	height:var(--fixedsize24px);
+	background-size: contain;
+	background-position:center center;
+	background-repeat:no-repeat;
+	
+}
+
+.sliderControl > .arrowLeft:after {
+
+	left:10px;
+	background-image:url('/res/i/component_slider-arrowLeft.png');
+
+}
+
+.sliderControl > .arrowRight:after {
+
+	right:10px;
+	background-image:url('/res/i/component_slider-arrowRight.png');
+
+}
+
+.sliderControl > .selectors {
+
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+	
+	gap:var(--fixedsize6px);
+	
+	position:absolute;
+	bottom:var(--size72px);
+	width:var(--fixedsize144px);
+	left:calc( 50% - var(--fixedsize72px) );
+	z-index:90;
+	cursor:pointer;
+
+}
+
+.selector {
+
+	border:4px solid #fff;
+	border-radius:100%;
+	width:var(--fixedsize12px);
+	height:var(--fixedsize12px);
+	box-shadow:0 4px 10px -6px #000;
+	
+	
+}
+
+.selector:hover {
+
+	background:#ccc !Important;
+
+}
+
+.selector.active {
+
+	background:#eee;
+	
+}
+
+.sliderContainer {
+
+		display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	
+	border-radius:var(--borderRadius-24);
+	
+	position:relative;
+	
+		height:100%;
+	background:red;
+
+}
+
+.sliderContainer > .slide{
+
+
+
+}
+
+.slide > .picture {
+
+	background-size: contain;
+	background-position:center center;
+	background-repeat:no-repeat;
+
+}
+
 
 
 
