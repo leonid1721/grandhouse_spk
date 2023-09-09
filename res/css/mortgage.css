@@ -1,0 +1,140 @@
+body {
+
+	font-family:"PP Object Sans"
+
+}
+
+.downPaymentNumber {
+
+	user-select: none;
+
+}
+
+.calculator {
+
+	background:#eee;
+
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+	align-items:flex-start;
+	align-content:flex-start;
+	gap:10px;
+	
+	padding:24px;
+}
+
+.calculator:before {
+
+	content:'';
+	width:50%;
+	height:50%;
+	position:absolute;
+	top:25%;
+	left:25%;
+	
+
+}
+
+.calcItem {
+
+	width:50%;
+	overflow:;
+	
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content:flex-start;
+	align-items:stretch;
+	
+	gap:24px;
+
+}
+
+.calcInput {
+
+	border:1px solid #fff;
+	border-radius:12px;
+	
+	position:relative;
+	padding:24px;
+	
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content:flex-start;
+	align-items:stretch;
+	gap:12px;
+	
+
+}
+
+.calcInputItem {
+	
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:flex-start;
+	align-items:flex-start;
+	gap:4px 12px;
+}
+
+
+
+.calcInput:before {
+	
+	content:'';
+	position:absolute;
+	background:#fff;
+	top:-10px;
+	left:16px;
+	width:auto;
+	padding:4px 8px;
+	font-size:10px;
+	border-radius:12px;
+}
+
+.calcInput.loanAmount:before {
+	
+	content:'Цена'
+
+}
+
+.calcInput.interestRate:before {
+	
+	content:'Ставка'
+
+}
+
+.calcInput.downPayment:before {
+	
+	content:'Первоначальный взнос'
+
+}
+
+.calcInput.loanTerm:before {
+	
+	content:'Срок кредита'
+
+}
+
+
+
+.calcItem.results {
+	
+	align-self:stretch;
+	background-color:rgba(255,255,255,0.5);
+	padding:24px;
+	
+	border:1px solid #A3AFC6;
+	
+	backdrop-filter: blur(37.5px);
+	
+	
+}
+
+
+
+
+

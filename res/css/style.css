@@ -210,232 +210,196 @@ body {
 /* END SECTION INTRO */
 
 
-/* SECTION SHOWCASE */
+/* SECTION FOOTER */
 
-.section.showcase {
+
+.section.footer {
 
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	align-items: stretch;
+	align-items: center;
 	align-content: flex-start;
 	
 	position: relative;
 	
-	padding:var(--size96px) var(--size96px);
-	
-	gap:var(--size48px);
+	background:var(--color-dark-mainFull);
+	color:var(--color-dark-mainMid);
+	padding:var(--size48px) var(--size96px);
+	gap:var(--size24px);
 
 }
 
-.section.showcase > .background, .section.showcase > .gradient {
+.footerSocials {
 
-	position:absolute;
-	top:0;
-	left:0;
-	height:100%;
-	width:100%;
-	background-size:cover;
-	background-position:top center;
-	background-repeat:no-repeat;
-	
-	/* Backgrounds are defined inline */
-	
-}
-
-.section.showcase > .background {
-
-	z-index:-2;
-	
-}
-
-.section.showcase > .gradient {
-
-	z-index:-1;
-	
-}
-
-.section.showcase > .borderFrame {
-
-	position:absolute;
-	top:var(--size48px);
-	left:var(--size48px);
-	height:calc( 100% - var(--size96px) );
-	width:calc( 100% - var(--size96px) );
-	border:1px solid #fff;
-	border-radius:var(--borderRadius-48);
-	z-index:20;
-}
-
-
-
-
-.showcaseSlider {
-
-	display: flex;
+	display:flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
+	justify-content: flex-start;
+	align-items: center;
 	align-content: flex-start;
 	
 	position: relative;
 	
-	border-radius:var(--borderRadius-24);
-	
-	height:480px;
+	gap:var(--size6px);
 
 }
 
-.showcaseSlider .sliderControl {
-	
-	position:absolute;
-	width:100%;
-	height:100%;
-	
-	left:calc( var(--size48px) * -1);
-	top:calc( var(--size48px) * -1);
-	height:calc(100% + var(--size96px));
-	width:calc(100% + var(--size96px));
+.socialsTitle > .text {
+
+	font-size:var(--fontSize-2436);
+	line-height:var(--lineHeight-2436);
 
 }
 
-.sliderControl > .arrowLeft, .sliderControl > .arrowRight  {
-
-	position:absolute;
-	display:block;
-	width:var(--fixedsize48px);
-	height:var(--fixedsize48px);
-	top:calc( 50% - var(--fixedsize24px) );
-	background:#fff;
-	z-index:90;
-	border-radius:100%;
-	cursor: pointer;
-
-}
-
-.sliderControl > .arrowLeft:hover, .sliderControl > .arrowRight:hover {
-
-	background:#eee;
-
-}
-
-.sliderControl > .arrowLeft {
-
-	left:calc( var(--fixedsize24px) * -1);
-
-}
-
-.sliderControl > .arrowRight {
-
-	right:calc( var(--fixedsize24px) * -1);
-
-}
-
-.sliderControl > .arrowLeft:after, .sliderControl > .arrowRight:after {
-
-	content:'';
-	position:absolute;
-	top:12px;
-	width:var(--fixedsize24px);
-	height:var(--fixedsize24px);
-	background-size: contain;
-	background-position:center center;
-	background-repeat:no-repeat;
-	
-}
-
-.sliderControl > .arrowLeft:after {
-
-	left:10px;
-	background-image:url('/res/i/component_slider-arrowLeft.png');
-
-}
-
-.sliderControl > .arrowRight:after {
-
-	right:10px;
-	background-image:url('/res/i/component_slider-arrowRight.png');
-
-}
-
-.sliderControl > .selectors {
+.socialsButtons {
 
 	display:flex;
 	flex-direction:row;
-	flex-wrap:nowrap;
-	justify-content:center;
+	flew-wrap:wrap;
+	justify-content:space-evenly;
 	align-items:center;
 	align-content:center;
 	
-	gap:var(--fixedsize6px);
+	position:relative;
 	
-	position:absolute;
-	bottom:var(--size72px);
-	width:var(--fixedsize144px);
-	left:calc( 50% - var(--fixedsize72px) );
-	z-index:90;
-	cursor:pointer;
+	gap:var(--size24px);
 
 }
 
-.selector {
+.socialsButtons > a {
 
-	border:4px solid #fff;
-	border-radius:100%;
-	width:var(--fixedsize12px);
-	height:var(--fixedsize12px);
-	box-shadow:0 4px 10px -6px #000;
-	
-	
-}
-
-.selector:hover {
-
-	background:#ccc !Important;
+	border:none;
 
 }
 
-.selector.active {
+.socialButton {
 
-	background:#eee;
+	height:var(--fixedsize48px);
+	width:var(--fixedsize48px);
 	
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+
 }
 
-.sliderContainer {
+.socialButton:hover {
 
-		display: flex;
+	transform:scale(1.05);
+
+}
+
+.socialButton.telegram {
+
+	background-image:url('/res/i/icon_telegram.png');
+
+}
+
+.socialButton.vk {
+
+	background-image:url('/res/i/icon_vk.png');
+
+}
+
+.socialButton.youtube {
+
+	background-image:url('/res/i/icon_youtube.png');
+
+}
+
+.socialButton.dzen {
+
+	background-image:url('/res/i/icon_dzen.png');
+
+}
+
+.socialButton.instagram {
+
+	background-image:url('/res/i/icon_instagram.png');
+
+}
+
+
+
+.footerLogoTagline {
+
+	display:flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	align-items: flex-start;
+	align-items: center;
 	align-content: flex-start;
 	
-	border-radius:var(--borderRadius-24);
+	position: relative;
 	
-	position:relative;
-	
-		height:100%;
-	background:red;
+	gap:var(--size6px);
 
 }
 
-.sliderContainer > .slide{
-
-
-
-}
-
-.slide > .picture {
-
-	background-size: contain;
-	background-position:center center;
+.footerLogo {
+	
+	background-image:url('/res/i/footer_logo.png');
+	height:var(--size102px);
+	width:var(--size720px);
+	background-size:contain;
 	background-repeat:no-repeat;
+	background-position:center center;
 
 }
 
+.footerTagline > .text {
 
+	font-size:var(--fontSize-3642);
+	font-size:var(--lineHeight-3642);
+	text-align:center;
 
+}
 
-/* END SECTION SHOWCASE */
+.footerContacts {
+	padding:var(--size36px) var(--size48px);
+	gap:var(--size48px);
+	border-radius:var(--borderRadius-48);
+	border:1px solid var(--color-dark-mainMid);
+	
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items:flex-start;
+	align-content:flex-start;
+}
+
+.contactsColumn {
+	flex:1 1 0;
+	min-width:240px;
+}
+
+.contactsColumn > .text {
+	font-size:var(--fontSize-1418);
+	line-height:var(--lineHeight-1418);
+}
+
+.contactsColumn > .text p {
+	margin-bottom:var(--lineHeight-1624);
+}
+
+.contactsColumn > .text p:last-of-type {
+	margin-bottom:0;
+}
+
+.contactsColumn > .text p.phone {
+	font-size:var(--fontSize-2432);
+	line-height:var(--lineHeight-2432);
+}
+
+.footerMadeIn {
+
+}
+
+.footerMadeIn > .text {
+	font-size:var(--fontSize-1416);
+	line-height:var(--lineHeight-1416);
+	text-align:center;
+}

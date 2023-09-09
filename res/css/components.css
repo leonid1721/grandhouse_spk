@@ -221,13 +221,28 @@ div[data-type="component"] {
 
 /* Component zoom */
 
+
+.pictureControls {
+
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+	align-items:center;
+	align-content:center;
+	
+	gap:var(--size48px);
+	
+	position:relative;
+	background:pink;
+	
+	padding:var(--size16px)
+}
+
 .zoom {
-
-	position:absolute;
- 	bottom:24px;
-	right:24px;
-	width:24px;
-	height:24px;
+	
+	height:16px;
+	width:16px;
 	background-color:#fff;
 	background-image:url();
 	background-size:cover;
@@ -236,68 +251,28 @@ div[data-type="component"] {
 	
 }
 
-.zoom.center {
-
-	position:absolute;
- 	bottom:24px;
-	left:calc(50% - 12px);
-	width:24px;
-	height:24px;
-	background-color:#fff;
-	background-image:url();
-	background-size:cover;
-	background-position:center center;
-	background-repeat:no-repeat;
-	
-}
 
 /* Component details */
 
 .details {
 
-	position:absolute;
-	bottom:24px;
-	left:24px;
-	width:48px;
-	height:24px;
-	background:#fff;
-	border-radius:24px;
+	height:16px;
+	width:16px;
+	background-color:#fff;
+	background-image:url();
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	
 }
 
-.details:before {
-	content:'';
-	position:absolute;
-	left:26px;
-	width:18px;
-	height:18px;
-	top:2px;
-	background:#00c2ff;
-	border-radius:100%;
-}
 
-.details:after {
-	position:absolute;
-	left:54px;
-	bottom:6px;
-	content:'Особенности';
-	text-wrap:nowrap;
-	font-family:PP Object sans;
-	font-size:10px;
-
-}
 
 /* Component sliderControls */
 /* parent container requires + 48px margin-bottom */
 
 .sliderControl {
 
-	position:absolute;
-	border:1px solid #fff;
-	border-radius:48px;
-	left:-48px;
-	top:-48px;
-	height:calc(100% + 96px);
-	width:calc(100% + 96px);
 
 }
 
@@ -419,9 +394,6 @@ top:0;
 left:0;
 height:100%;
 width:100%;
-
-
-
 
 }
 

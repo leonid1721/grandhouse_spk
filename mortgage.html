@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Грандхаус: строим дома в которых вы будете счастливы</title>
+</head>
+
+<link rel="stylesheet" href="res/css/mortgage.css">
+
+<body>
+
+
+
+<div class="calculator">
+
+	<div class="calcItem inputs">
+
+		<div class="calcInput loanAmount">
+
+			<div class="calcInputItem">
+				<div class="text">Цена</div>
+				<div class="selector">
+					<select id="loanAmountPackage">
+						<option value="5461000">холодного контура</option>
+						<option value="6714000">теплого контупа</option>
+						<option value="9033000">с наружней отделкой</option>
+						<option value="11444000">с черновой отделкой</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="calcInputItem">
+				<div class="text initialPrice" id="loanAmountInitialPrice">2 000 000</div>
+			</div>
+
+			<div class="calcInputItem">
+				<div class="text finalPrice" id="loanAmountFinalPrice">1 000 000</div>
+			</div>
+
+			<div class="calcInputItem">
+				<div class="text">со скидкой 7% при подписании договора до конца сентября 2023</div>
+			</div>
+
+		</div>
+
+
+		<div class="calcInput interestRate">
+			<div class="calcInputItem">
+				<select id="interestRate">
+					<option value="5.3">5,3%</option>
+					<option value="5">5%</option>
+					<option value="14">14%</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="calcInput downPayment">
+			<div class="calcInputItem">
+				<input type="range" class="range" id="downPayment" min="0" max="11" />
+				<div class="text" id="downPaymentPercent">15%</div>
+			</div>
+			<div class="calcInputItem">
+				<div class="text" id="downPaymentNumber">1 000 000  ₽</div>
+			</div>
+		</div>
+
+		<div class="calcInput loanTerm">
+			<div class="calcInputItem">
+				<input type="range" class="range" id="loanTerm" name="volume" min="0" max="11" />
+			</div>
+			<div class="calcInputItem">
+				<div class="text">25 лет</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="calcItem results">
+		<div class="text">
+			Ежемесячный платеж не более
+		</div>
+		<div class="text monthlyPayment" id="monthlyPayment">34 000 рублей</div>
+		<div class="text disclaimer">
+			<p>аннуитетные платежи с неизменяемым  размером платежа. </p>
+			<p>Примерный расчет  по данным на авгусат 2023 г. Не является публичной офертой. Конкретная цифра платежей и ставка ипотеки требует уточнения у банка перед заключением договора</p>
+		</div>
+	</div>
+
+</div>
+
+
+<script src="/res/js/mortgage.js"></script>
+</body>
+
+</html>
